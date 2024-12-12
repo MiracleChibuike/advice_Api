@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background: #fff;
+            color: #000;
+        }
+        .toggle{
+            background: #040404;
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p class="check">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis maxime sunt magnam eveniet quia ad odit id dignissimos in corporis fugiat laudantium, voluptatem, maiores
+             dolores illo optio? Eveniet, consequatur quis!
+        </p>
+    </div>
+
+    <script>
+        const main_Body = document.querySelector(".main");
+        let checker = document.querySelector(".check");
+
+        checker.addEventListener("click", () => {
+            main_Body.classList.add("toggle");
+        })
+    </script>
+</body>
+</html>

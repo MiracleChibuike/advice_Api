@@ -1,0 +1,63 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: #eaf5f5;
+    /* background: linear-gradient(rgba(10, 20, 70, 0.5), rgba(10, 20, 70, 0.5)),
+    url(/Weeke1/images/barber.jpg) no-repeat center center/cover; */
+}
+
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background: rgb(50, 20, 170, 0.5);
+    margin: 10px 0;
+    position: relative;
+    left: 170px;
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background: rgb(220, 192, 51);
+        margin: 10px 0;
+        position: relative;
+    left: 110px;
+
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background: rgb(67, 63, 47);
+        margin: 10px 0;
+        position: relative;
+    left: 70px;
+
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    background: rgb(222, 38, 38);
+        margin: 10px 0;
+        position: relative;
+    left: 20px;
+
+}
+.box5{
+    width: 200px;
+    height: 200px;
+    background: rgb(6, 100, 25);
+}
+.box6{
+    width: 400px;
+    height: 200px;
+    margin: 20px 0;
+     background: #377171;
+}
+
+/* Use random text or nav-bar and teach fixed positioning */

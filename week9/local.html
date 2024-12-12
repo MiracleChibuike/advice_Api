@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background: #a1e3e3;
+            padding: 20px 30px;
+        }
+        .show_message{
+            display: flex;
+            justify-content: space-between;
+        }
+        #form_El{
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+        }
+        .userName, .user_Email{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+        .user_Email input, .userName input{
+            padding: 10px 10px;
+            border-radius: 8px;
+            outline: none;
+            border: 2px solid #020202;
+        }
+        #submit_btn{
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            background: #040404;
+            color: #fff;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        #user_display{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="show_message">
+           <div class="text">
+            <strong id="Account">My Account</strong>
+           </div>
+           <div class="user">
+            <p id="user_display">User Name</p>
+           </div>
+        </div>
+        <form action="" id="form_El">
+            <div class="userName">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" placeholder="Ex. Miracle">
+            </div>
+            <div class="user_Email">
+                <label for="userEmail">Your Email</label>
+                <input type="email" id="userEmail" placeholder="Ex. youremail@gmail.com">
+            </div>
+            <div class="sub">
+                <button type="submit" id="submit_btn">Submit Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="/week9/local.js"></script>
+</html>

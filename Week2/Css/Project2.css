@@ -1,0 +1,187 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For nav-Contents */
+.nav-Contents{
+    background: rgb(45, 40, 60);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.nav-Contents div{
+    padding: 5px;
+}
+
+.logo img{
+    width: 100px;
+}
+.location{
+    color: #fff;
+}
+
+.location strong{
+    font-size: 19px;
+    /* position: relative;
+    left: 20px;
+    bottom: 20px; */
+}
+.Container_search{
+    display: inline;
+}
+.Container_search select{
+    color: black;
+    padding: 10px;
+}
+#search_Input{
+    padding: 12px 10px;
+    padding: 15px 100px;
+    border-radius: 10px;
+    /* width: 500px; */
+    outline: none;
+    /* position: relative;
+    bottom: 45px;
+    left: 70px; */
+}
+.Container_search i{
+    color: #fff;
+    background: orange;
+    padding: 12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* .language{
+    display: inline-flex;
+    position: relative;
+    top: 10px;
+} */
+.language i{
+    position: relative;
+    left: 5px;
+}
+/* .sign_In i{
+    position: relative;
+    left: 120px;
+    bottom: 15px;
+} */
+
+.language, .sign_In, .others, .carts{
+    color: #fff;
+}
+.carts{
+    display: inline-flex;
+}
+/* .carts i{
+   position: relative;
+   left: -5px;
+} */
+/* .others span{
+    position: relative;
+    left: 20px;
+    bottom: 18px;
+} */
+/* Applying Hover Effects on them */
+.location:hover, .language:hover, .sign_In:hover, .others:hover, .carts:hover{
+    border-bottom: 1px solid #f1f1f1;
+    /* height: 50px; */
+    cursor: pointer;
+    border-radius: 5px;
+}
+.logo:hover{
+    border: 1px solid #f1f1f1;
+    /* height: 50px; */
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Style for Menu */
+.menuIcons{
+    display: none;
+}
+/* Parent Nav Style */
+.parent_navs{
+    display: flex;
+}
+.icons{
+    background: rgb(20, 20, 30);
+    color: #fff;
+    padding: 15px 0;
+}
+.icons span{
+    padding: 0 15px;
+}
+/* .background{
+    text-align: center;
+    background: url(/Week2/images/bed.jpeg) no-repeat center center/cover;
+    padding: 100px 0;
+    color: #fff;
+} */
+.background h2{
+    font-size: 50px;
+}
+.background p{
+    font-size: 20px;
+}
+.carousel-item img, .carousel-item :active img{
+    width: 300px;
+}
+
+/* Styling for our Items */
+.items{
+    background: linear-gradient(rgb(150, 150, 150, 0.5), rgba(69, 24, 174, 0.9));
+}
+.displays img, .displays_Other img{
+    width: 100px;
+}
+.item{
+     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.first_Category, .second_Category, .third_Category, .last_Category{
+    background: #fff;
+    margin: 10px 10px;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px #817f7f;
+}
+.first_Category h2, .second_Category h2, .third_Category h2, .last_Category{
+    margin: 15px;
+}
+.displays, .displays_Other{
+    display: inline-flex;
+}
+#boards{
+    position: relative;
+    top: 5px;
+}
+
+.displays2 img{
+    width: 100px;
+}
+.displays2{
+    margin: 40px 0;
+    display: inline-flex;
+}
+
+
+/* Media Querry - for Mobile Screens */
+
+@media screen and (min-width: 0) and (max-width: 750px) {
+    .item{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menuIcons{
+        display: block;
+    }
+    .parent_navs{
+        display: none;
+    }
+}
+
+/* For Ipad Screens */
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+     .item{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

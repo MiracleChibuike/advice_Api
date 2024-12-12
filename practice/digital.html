@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            place-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(rgba(55, 55, 183, 0.5), rgba(102, 149, 102, 0.7));
+        }
+        .clock_body{
+            display: flex;
+        }
+        .clock_body > div{
+            margin: 5px 15px;
+            text-align: center;
+            background: #5740ca;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+        .hours_Div p, .minutes_Div p, .seconds_Div p{
+            font-size: 1.7rem;
+        }
+        #ampm{
+            position: relative;
+            top: 60px;
+            left: -10px;
+            background: #1d1e56;
+            height: 30px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .days{
+            text-align: center;
+            margin: 20px 0;
+        }
+        /* .hours_Div span, .minutes_Div span, .seconds_Div span{
+            position: relative;
+            top: 10px;
+            padding: 5px 15px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="clock_body">
+            <div class="hours_Div">
+                <p id="hours_Time">00</p>
+                <span>Hours</span>
+            </div>
+            <div class="minutes_Div">
+                <p id="minutes_Time">00</p>
+                <span>Minutes</span>
+            </div>
+            <div class="seconds_Div">
+                <p id="seconds_Time">00</p>
+                <span>Seconds</span>
+            </div>
+            <span id="ampm"></span>
+        </div>
+        <div class="days">
+            <h3 class="currentDate"></h3>
+        </div>
+    </div>
+</body>
+
+<script src="js/digital.js"></script>
+</html>

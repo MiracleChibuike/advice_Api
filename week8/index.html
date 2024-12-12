@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            display: none;
+        }
+
+        .nav_container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background: rgb(60, 59, 59);
+            color: #fff;
+        }
+
+        .nav-links ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav-links ul li {
+            padding: 0 20px;
+        }
+
+        .home {
+            background: white;
+        }
+
+        .home {
+            padding: 40px;
+            background: #000;
+            color: #fff;
+        }
+
+        /* .home p{
+            color: #000;
+        } */
+        .home h2 {
+            color: #007000;
+        }
+
+        #moon_regular {
+            display: none;
+        }
+
+        .toggle {
+            background: #f4f4f4;
+            color: #020202;
+        }
+        .loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent #0084ff #0084ff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+    
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+        #headre_load{
+            display: grid;
+            place-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header id="headre_load">
+        <span class="loader"></span>
+    </header>
+    <div class="main">
+        <div class="nav_container">
+            <div class="logo">
+                <h2>Logo</h2>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li>
+                        <i class="fa-solid fa-moon" id="moon_solid"></i>
+                        <i class="fa-regular fa-moon" id="moon_regular"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="home">
+            <p>
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Aliquid esse atque rem minima praesentium nemo
+                explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                Distinctio quia iusto commodi. Placeat, ullam rerum.
+                Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit.
+                    Aliquid esse atque rem minima praesentium nemo
+                    explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                    Distinctio quia iusto commodi. Placeat, ullam rerum.
+                    Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit.
+                    Aliquid esse atque rem minima praesentium nemo
+                    explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                    Distinctio quia iusto commodi. Placeat, ullam rerum.
+                    Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit.
+                    Aliquid esse atque rem minima praesentium nemo
+                    explicabo sapiente libero reprehenderit, totam nobis vel quae?
+                    Distinctio quia iusto commodi. Placeat, ullam rerum.
+            </p>
+            <h2>
+                Hello with a different
+            </h2>
+        </div>
+    </div>
+</body>
+
+<script>
+    const moon_regular_Icon = document.getElementById("moon_regular");
+    const moon_solid_Icon = document.getElementById("moon_solid");
+    let main_container = document.querySelector(".home");
+    let main_page = document.querySelector(".main")
+    let loader = document.getElementById("headre_load");
+
+    const showLoader = () => {
+            setTimeout(() => {
+                loader.style.display = "none";
+                main_page.style.display = "block"
+            }, 5000)
+    };
+
+    showLoader()
+
+    const addBg = () => {
+        main_container.classList.add("toggle")
+    };
+    moon_solid_Icon.addEventListener("click", addBg);
+</script>
+<script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
+
+</html>

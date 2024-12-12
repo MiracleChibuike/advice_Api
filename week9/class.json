@@ -1,0 +1,41 @@
+{
+    "Products": [
+        {
+            "id": 1,
+            "Name": "Miracle",
+            "Age": 35,
+            "Course": "Web Development",
+            "isGraduated": true,
+            "address": {
+                "city": "Owerri",
+                "post_code": 247
+            },
+            "hobbies": ["Cooking", "Coding"]
+        },
+
+          {
+            "id": 2,
+            "Name": "Miracle",
+            "Age": 35,
+            "Course": "Web Development",
+            "isGraduated": true,
+            "address": {
+                "city": "Owerri",
+                "post_code": 247
+            },
+            "hobbies": ["Cooking", "Coding"]
+        },
+          {
+            "id": 3,
+            "Name": "Miracle",
+            "Age": 35,
+            "Course": "Web Development",
+            "isGraduated": true,
+            "address": {
+                "city": "Owerri",
+                "post_code": 247
+            },
+            "hobbies": ["Cooking", "Coding"]
+        }
+    ]
+}

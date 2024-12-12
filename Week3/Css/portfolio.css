@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Yesteryear", serif;
+
+}
+:root{
+    --light-gray: #e8e4f6;
+    --transparent-blue: #778ee9;
+    --light-green: #c3e4d0;
+    --white-color: #f1f1f1;
+}
+
+.hero{
+    background: linear-gradient(rgb(20, 20, 50, 0.5), rgba(138, 111, 166, 0.8)), 
+    url(/Week3/images/COULEURS.jpeg) no-repeat center center/cover;
+}
+.nav_Container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+.nav_Links ul{
+    display: flex;
+    list-style-type: none;
+    color: var(--white-color);
+}
+.nav_Links ul li{
+    padding: 12px;
+    font-size: 18px;
+}
+.nav_Links ul li:hover{
+    background-color: var(--light-green);
+    transition: all .3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo h2{
+    color: var(--light-green);
+    font-size: 1.9rem;
+}
+
+/* For */
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 270px 0;
+}
+.description h2{
+    font-size: 3rem;
+    color: var(--white-color);
+}
+a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.buttons{
+    margin: 30px;
+}
+.buttons button{
+    padding: 15px 65px;
+    background: transparent;
+    border: 3px solid var(--light-green);
+    color: var(--white-color);
+    margin: 0 15px;
+    border-radius: 35px;
+}
+.buttons button:hover{
+    background: var(--light-green);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.display_main{
+    display: flex;
+    background: rgb(238, 235, 235);
+    border: 2px solid #000;
+    width: 90%;
+}
+.skill_p{
+    background: #000;
+    color: #fff;
+    width: 70%;
+}
+.menu{
+    display: none;
+}
+/* For Media Querrry on Mobiles */
+@media screen and  (min-width: 0) and (max-width: 750px) {
+    .nav_Container{
+        background: orange;
+    }
+    .nav_Links{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Signika+Negative:wght@300..700&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap');
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Mulish";
+        }
+        .main{
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+            background: linear-gradient(rgb(20, 20, 70, 0.5), rgb(20, 10, 60, 0.5)), 
+            url(https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D) no-repeat center center/cover;
+        }
+        .profile{
+            background: #fff;
+            padding: 10px 20px;
+            border: 1px solid #020202;
+            box-shadow: 0 0 20px #050505;
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+        .title{
+            text-align: center;
+        }
+        #userGen{
+            margin: 10px 0;
+           padding: 10px 20px;
+            width: 100%;
+            cursor: pointer;
+            border: none;
+            background: rgb(20, 20, 70, 0.7);
+            color: #fff;
+            border-radius: 7px;
+        }
+        #userGen:hover{
+            transition: .4s;
+            background: rgb(20, 20, 70, 0.5);
+        }
+        .user_Pic, .user_Credentials{
+            text-align: center;
+            margin: 10px 0;
+        }
+        #userImage{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            content-visibility: hidden;
+            /* display: none; */
+        }
+        .user_Details{
+            margin: 15px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="profile">
+            <h3 class="title">Random User Generator</h3>
+            <div class="user_Pic">
+                <img id="userImage">
+            </div>
+            <div class="user_Credentials">
+                <p id="user_intro"></p>
+                <h3 class="user_text"></h3>
+            </div>
+            <div class="user_Details">
+                <p id="Email"></p>
+                <p id="Phone"></p>
+                <p id="Address"></p>
+                <p id="DOB"></p>
+            </div>
+            <div class="button_Gen">
+                <button id="userGen">Generate User</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/week10/random.js"></script>
+</html>

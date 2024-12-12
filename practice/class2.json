@@ -1,0 +1,36 @@
+{
+    "students": [
+       {
+        "Name": "Miracle",
+        "Age": 19,
+        "colour": "blue",
+        "address": {
+            "apt_no": 413,
+            "postal_code": 123,
+            "state": "imo state"
+        }
+       }, 
+       {
+         "Name": "Miracle",
+        "Age": 19,
+        "colour": "blue",
+        "address": {
+            "apt_no": 413,
+             "postal_code": 123,
+            "state": "imo state"
+        }
+       },
+       {
+         "Name": "Miracle",
+        "Age": 19,
+        "colour": "blue",
+        "address": {
+            "apt_no": 413,
+             "postal_code": 123,
+            "state": "imo state"
+        }
+       }
+
+    ]
+}
+ 

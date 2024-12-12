@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            place-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .name, .email{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+        .name label, .email label{
+            margin: 5px 0;
+        }
+        .name input, .email input{
+            padding: 10px 15px;
+            outline: none;
+            border: 2px solid #eaf;
+            border-radius: 10px;
+        }
+        #submit{
+            width: 100%;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Local Storage</h2>
+        <div class="form">
+            <form action="" id="form_El">
+                <div class="name">
+                    <label for="name">Enter Your Name</label>
+                    <input type="text" placeholder="Ex. Charles" id="name">
+                </div>
+                <div class="email">
+                    <label for="email">Enter Your Email</label>
+                    <input type="email" placeholder="Ex. youremail@gmail.com" id="email">
+                </div>
+                <div class="sub_button">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/practice/js/local.js"></script>
+</html>

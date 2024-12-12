@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background: #9dabab;
+            margin: 150px 100px;
+        }
+        .cards{
+            background: #f2f2f2;
+            padding: 30px 20px;
+            display: inline-flex;
+            border-radius: 10px;
+        }
+        .cards div{
+            margin: 0 10px;
+            box-shadow: 0 0 20px black;
+        }
+        /* .s-card{
+            position: relative;
+            left: 300px;
+            bottom: 200px;
+        } */
+        .contents{
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        #card_Img{
+            width: 400px;
+        }
+        h2{
+            margin: 20px 0;
+        }
+        button{
+            margin: 20px 0;
+            width: 100%;
+            padding: 15px 0;
+            background: #aabbff;
+            border: none;
+        }
+
+        @media screen and (min-width: 0) and (max-width: 750px) {
+            .cards{
+                display: block;
+            }
+             #card_Img{
+            width: 200px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for main-->
+     <div class="main">
+        <!-- container for cards -->
+         <div class="cards">
+            <div class="f-card">
+                <div class="image">
+                    <img src="../Week2/images/COULEURS.jpeg" id="card_Img" alt="">
+                </div>
+                <div class="contents">
+                    <h2>A stary Night</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Ipsum necessitatibus vitae quam dolorum sint doloribus eius <br> quisquam expedita iusto earum deleniti iste cum consequatur <br>
+                         obcaecati, officiis non odio. Quaerat, magni!</p>
+                         <button>Explore </button>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="image">
+                    <img src="../Week2/images/COULEURS.jpeg" id="card_Img" alt="">
+                </div>
+                <div class="contents">
+                    <h2>A stary Night</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Ipsum necessitatibus vitae quam dolorum sint doloribus eius <br> quisquam expedita iusto earum deleniti iste cum
+                        consequatur <br>
+                        obcaecati, officiis non odio. Quaerat, magni!</p>
+                    <button>Explore </button>
+                </div>
+            </div>
+            <div class="t-card">
+                <div class="image">
+                    <img src="../Week2/images/COULEURS.jpeg" id="card_Img" alt="">
+                </div>
+                <div class="contents">
+                    <h2>A stary Night</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Ipsum necessitatibus vitae quam dolorum sint doloribus eius <br> quisquam expedita iusto earum deleniti iste cum
+                        consequatur <br>
+                        obcaecati, officiis non odio. Quaerat, magni!</p>
+                    <button>Explore <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+            </div>
+         </div>
+     </div>
+    <script src="https://kit.fontawesome.com/a0d92fbbd6.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.up_Container{
+    background: #202040;
+    padding: 10px;
+        color: #f1f1f1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+
+}
+
+.nav_Contents{
+    display: inline-flex;
+}
+
+#menu, #b-logo{
+    width: 50px;
+}
+.menu p, .logins span{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.menu, .logo, .logins{
+    display: inline-flex;
+}
+.logo h2{
+     position: relative;
+    left: 10px;
+    top: 10px;
+}
+.logo{
+    position: relative;
+    left: 600px;
+}
+.logins{
+    position: relative;
+    left: 900px;
+}
+.logins button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #d78b09;
+    color: #fff;
+    margin: 0 10px;
+}
+.searchBars{
+    text-align: center;
+    margin: 10px 0;
+}
+.searchBars input{
+        padding: 15px 10px;
+        border-radius: 25px;
+        border: none;
+        width: 50%;
+}
+.nav_buttons{
+    text-align: center;
+    margin: 25px 0;
+}
+.nav_buttons span{
+    padding: 0 10px;
+}
+
+/* Center Image */
+.center{
+    padding: 0 50px;
+    position: relative;
+    top: 200px;
+}
+.center_Image{
+    text-align: center;
+}
+.container_Texts{
+    display: inline-flex;
+}
+.texts, .text2{
+    margin: 0 50px;
+}
+#woman_Image{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.main_image{
+   display: block;
+    position: relative;
+    bottom: 380px;
+    left: 400px;
+}
+#man1, #man2{
+        width: 250px;
+        border-radius: 10px;
+        margin: 20px 0;
+
+}
+.main_image span a{
+    position: relative;
+    left: -250px;
+}

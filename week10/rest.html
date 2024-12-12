@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Slip</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Signika+Negative:wght@300..700&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap');
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: "Yesteryear", serif; */
+              font-family: "Mulish", serif
+        }
+        .main{
+            background: #bce7e7;
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+        }
+        .advice_Body{
+            border: 1px solid #f4f4f4;
+            border-radius: 10px;
+            padding: 20px 10px;
+            box-shadow: 0 0 40px #020202;
+            margin: 0 50px;
+        }
+        .advice_Body h2{
+            text-align: center;
+            margin: 15px 0;
+        }
+        .adviceButton button{
+            margin: 40px 0 0 0;
+            width: 100%;
+            padding: 10px 0;
+            background: #040404;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .adviceButton button:hover{
+            transition: .4s;
+            background: rgb(0, 0, 0, 0.8)
+        }
+      .advice_Text{
+        margin: 15px 0;
+        text-align: center;
+        color: rgb(40, 20, 80);
+      }
+      /* #advice_Message{
+      } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="advice_Body">
+            <h2>Need some advice? Click on the button  below to generate one</h2>
+            <div class="advice_Text">
+                <h3 id="advice_Message"></h3>
+            </div>
+            <div class="adviceButton">
+                <button id="Gen_Advice">Generate Advice</button>
+            </div>
+            </div>
+        </div>
+</body>
+<script src="/week10/rest.js"></script>
+</html>

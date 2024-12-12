@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            place-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(rgba(55, 55, 183, 0.5), rgba(102, 149, 102, 0.7));
+
+        }
+        .Age_Calc{
+            text-align: center;
+            color: #f2f2f2;
+        }
+        #Answer_Display{
+             text-align: center;
+            color: #f2f2f2;
+        }
+        .main > div{
+            margin: 15px 0;
+        }
+        .age_year input, .age_Month input{
+            padding: 15px 20px;
+            border: none;
+            border-radius: 7px;
+            outline: none;
+            font-size: 16px;
+            text-align: center;
+        }
+        ::placeholder{
+            font-size: 12px;
+            color: rgb(200, 200, 200);
+        }
+        #check_Age{
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 7px;
+            background: rgb(79, 79, 215);
+            color: #fff;
+            cursor: pointer;
+        }
+        .successMsg{
+            background: rgba(22, 194, 22, 0.183);
+            color: #f1f1f1;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .errorMsg{
+            background: #501020;
+            padding: 10px;
+        }
+        /* #Answer_Display{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+        <div class="main">
+            <h2 class="Age_Calc"></h2>
+
+            <div class="age_year">
+                <input type="number" id="age_year" placeholder="Enter Your Birth Year">
+            </div>
+            <div class="age_Month">
+                <input type="number" id="age_month" placeholder="Enter your Birth Month">
+            </div>
+            <!-- Display Answer -->
+             <h4 id="Answer_Display"></h4>
+            <div class="sub">
+                <button id="check_Age">Calculate Age</button>
+            </div>
+        </div>
+</body>
+
+<script src="js/index.js"></script>
+</html>

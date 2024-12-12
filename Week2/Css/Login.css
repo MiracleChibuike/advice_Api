@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Styling for main container */
+/* A class selector */
+.main_Container{
+       background: linear-gradient(rgba( 30, 30, 100, 0.7), rgba(90, 90, 150, 0.8)),
+     url(/Week2/images/bg.jpg) no-repeat center center/cover;
+    padding: 40px;
+    box-shadow: 0 0 50px rgb(10,10, 10);
+}
+/* A tag selector beacaused we styled by the tag name */
+h2{
+    color: #fff;
+    font-size: 25px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+/* An ID selector beacuse we styled using the ID */
+#formContainer{
+    padding: 10px 15px;
+}
+.userName, .password{
+    color: #fff;
+    margin: 20px  0px;
+}
+
+#Password_Input, #username_Input{
+    padding: 12px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(236, 234, 234, 0.9);
+    width: 250px;
+    background: rgb(50, 50, 50, 0.4);
+    outline: none;
+    color: #fff;
+    margin: 5px 0;
+}
+
+#check_Input{
+    color: #fff;
+}
+
+.button{
+    margin: 10px 0;
+}
+
+button{
+    padding: 15px 5px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    background: rgb(15, 15, 161, 0.8);
+    color: #fff;
+}
+
+.forgot{
+    margin: 20px 0;
+    text-align: center;
+}
+a{
+    color: #fff;
+}

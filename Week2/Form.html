@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Workthrough</title>
+    <style>
+        /* Working with TAG Selectors */
+        input{
+            border-radius: 40px;
+            border: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="../Week2/Css/form.css">
+</head>
+<body style="background: gray; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+    <div id="main_Container">
+        <!-- Working with Forms -->
+         <form action="mailto:miracle@gmail.com" method="post" >
+            <!-- For the Email field -->
+            <div>
+                <label for="email">Email <small>*</small></label>
+                <input type="email" placeholder="email" required id="email" >
+            </div>
+            <!-- For the Name Field -->
+            <div>
+                <label for="Full_Name">Full Name <small>*</small></label>
+                <input type="text" placeholder="Name">
+            </div>
+            <!-- For the Address field -->
+            <div>
+                <label for="Address">Address <small>*</small></label>
+                <input type="text" placeholder="Address">
+            </div>
+            <!-- For the Phone Number Field -->
+            <div>
+                <label for="Phone">Phone Number <small>*</small></label>
+                <input type="tel" placeholder="Phone">
+            </div>
+            <textarea name="" id="">
+
+            </textarea>
+            <div>
+                <label for="food">What is your fav food <small>*</small></label>
+                <input list="Foods" name="foods" id="foods">
+
+                <datalist id="Foods">
+                    <option value="Rice"></option>
+                    <option value="Spag"></option>
+                </datalist>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+         </form>
+    </div>
+
+    <div>
+        <!-- <form action="">
+            <fieldset>
+                                <legend>What is your fav car</legend>
+
+               <div>
+                <input type="radio" id="BMW" name="xy">
+                <label for="BMW">BMW</label>
+               </div>
+               <div>
+                <input type="radio" id="Benz" name="xy">
+                <label for="Benz">Mercedes Benz</label>
+               </div>                                       
+               <div>
+                <input type="radio" id="Ford" name="xy">
+                <label for="Ford">ford Edge</label>
+               </div>
+            </fieldset>
+        </form> -->
+        <!-- Download Audio here -->
+
+        <!-- <a href="Audios/Ed Sheeran - Shape of You.mp3" download>Download Ed Sheeran - Shape of you</a> -->
+
+        <br>
+
+        <!-- <a href="Documents/WEB DEVELOPMENT INSIGHT.pdf" download=>Download PDF file</a> -->
+
+        <br>
+
+        <!-- Opening a new page in a new browser -->
+         <!-- <a href="https://onyiamiracleportfolio.netlify.app/" target="_blank"  >Visit my page</a> -->
+
+
+        <!-- <audio src="../Day1/Ed Sheeran - Shape of You.mp3" controls></audio> -->
+    </div>
+
+
+    <!--  -->
+    
+</body>
+</html>
